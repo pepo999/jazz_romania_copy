@@ -1,0 +1,73 @@
+*{
+    border: solid red 1px;
+}
+
+html, body{
+    margin: 0px;
+    padding: 0px;
+  display: grid;
+  height: 100%;
+  grid-template-rows: 4;
+}
+
+header{
+    background-color: #ffcc00;
+    display: flex;
+    justify-content: space-between;
+    overflow: auto;
+}
+
+.player{
+    width: 15.85vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.schedule{
+    display: flex;
+    justify-content: flex-end;
+    background-color: #fafafa;
+}
+
+.scheduletop{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50vh;
+    font-size: 200px;
+flex-basis: 1;
+overflow: auto;
+}
+
+.scheduleleft{
+width: 50%;
+}
+
+.scheduleright{
+   width: 50%;
+   text-align: end;
+}
+
+footer{
+    background-color: orange;
+}
+
+
+.sliding-rows{
+    height: 50%;
+    background-color: pink;
+}
+
+.txt-player{
+    margin: 1vh;
+}
+
+span{
+    font-size: xx-large;
+}
+
+
+
+
