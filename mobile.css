@@ -1,7 +1,13 @@
 @media screen and (max-width: 900px) {
 
+*{
+    border: solid red 2px;
+}
+
     body{
         width: 100vw;
+        margin: 0;
+        padding: 0;
     }
     header{
         background-color: #ffcc00;
@@ -179,6 +185,7 @@
         width: 50vw;
     height: 50vh;
     rotate: -45deg;
+    content: url(./assets/arrowup.svg);
     }
 
     @keyframes arrow-turn {
