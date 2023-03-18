@@ -106,5 +106,9 @@
     height: 50vh;
     rotate: -45deg;
     }
+
+    @keyframes arrow-turn {
+        
+    }
      
 }
