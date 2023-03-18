@@ -3,13 +3,9 @@
         background-color: #ffcc00;
         display: flex;
         flex-direction: column;
-      
+        justify-content: flex-start;
         width: 100vw;
-
-    }
-
-    .player{
-        grid-area: play;
+        height: max-content;
     }
 
     .play{
@@ -22,7 +18,31 @@
         height: 26vw;
     }
 
-    
+    .schedule{
+        width: 100vw;
+    }
+
+    .scheduleleft{
+        width: 100vw;
+        font-size: 50px;
+    }
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1;
+        grid-template-rows: repeat(7, 1fr);
+        grid-template-areas: 
+        "mon"
+        "tue"
+        "wed"
+        "thu"
+        "fri"
+        "sat"
+        "sun";
+        padding-bottom: 30vh;
+
+    }
+
 
     
      
