@@ -150,7 +150,11 @@ span{
     width: 100vw;
     overflow: hidden;
     white-space: nowrap;
-    animation: slide-text 5s timing-function delay iteration-count direction fill-mode;
+    animation: slide-text;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    animation-duration: 10s;
+    animation-direction: alternate;  
 }
 
 .piano-container{
@@ -200,14 +204,16 @@ rotate: -45deg;
     }
 }
 
-@keyframes silde-text{
-    0% {
-right: 0;
+@keyframes slide-text1 {
+    from {
+       margin-left: 0px;
     }
-    100%{
-right: 100vw;
+
+    to {
+       margin-left: 100vw;
     }
-}
+ }
+ 
 
 
 
