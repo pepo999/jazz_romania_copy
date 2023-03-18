@@ -10,8 +10,8 @@ html, body{
     margin: 0px;
     padding: 0px;
   display: grid;
-  height: 100%;
   grid-template-rows: 4;
+  box-sizing: border-box;
 }
 
 header{
@@ -19,6 +19,14 @@ header{
     display: flex;
     justify-content: space-between;
     height: 100vh;
+}
+
+.play{
+    margin-right: 5vw;
+}
+
+.logo{
+    width: 14vw; height: 14vw; margin: 1.7vh;
 }
 
 .player{
