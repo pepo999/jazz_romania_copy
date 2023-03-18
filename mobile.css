@@ -104,6 +104,7 @@
     .freccia{
         width: 50vw;
     height: 50vh;
+    rotate: -45deg;
     }
      
 }
