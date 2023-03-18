@@ -14,7 +14,7 @@ header{
     background-color: #ffcc00;
     display: flex;
     justify-content: space-between;
-    overflow: auto;
+    height: 100vh;
 }
 
 .player{
@@ -28,6 +28,7 @@ header{
     display: flex;
     justify-content: flex-end;
     background-color: #fafafa;
+    height: 150vh;
 }
 
 .scheduletop{
