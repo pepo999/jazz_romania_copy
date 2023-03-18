@@ -87,7 +87,7 @@
         align-items: center;
     }
     
-    .arrow {
+    .arrow{
         background-color: #ff3333;
         width: 100vw;
         height: 100vw;
@@ -97,11 +97,13 @@
     }
     
     .mouth-img{
-        height: 55vh;
+        width: 50vw;
+        height: 50vh;
     }
     
     .freccia{
-    height: 55vh;
+        width: 50vw;
+    height: 50vh;
     }
      
 }
