@@ -25,10 +25,10 @@ header{
 }
 
 .schedule{
-    display: flex;
-    justify-content: flex-end;
+    /* display: flex;
+    justify-content: flex-end; */
     background-color: #fafafa;
-    height: 150vh;
+    /* height: 150vh; */
 }
 
 .scheduletop{
@@ -36,19 +36,87 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 50vh;
+    height: 80vh;
     font-size: 200px;
 flex-basis: 1;
-overflow: auto;
+overflow: none;
 }
 
-.scheduleleft{
+.scheduleleft, .scheduleright{
 width: 50%;
 }
 
-.scheduleright{
-   width: 50%;
-   text-align: end;
+.point{
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    float: right;
+    margin: 50px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+    ". . mon"
+    "tue wed ."
+    ". thu ."
+    ". . fri"
+    "sat sun .";
+    padding-bottom: 30vh;
+}
+
+.mon, .tue, .wed, .thu, .fri, .sat, .sun{
+    height: 800px;
+}
+
+.mon{
+    grid-area: mon;
+}
+
+.tue{
+    grid-area: tue;
+}
+
+.wed{
+    grid-area: wed;
+}
+
+.thu{
+    grid-area: thu;
+}
+
+.fri{
+    grid-area: fri;
+}
+
+.sat{
+    grid-area: sat;
+}
+
+.sun{
+    grid-area: sun;
+}
+
+ul{
+    font-size: 50px;
+    font-weight: 500;
+    list-style-type: none;
+}
+
+li{
+    font-size: medium;
+    display: inline-block;
+}
+
+.hour, .program{
+    display: inline;
+}
+
+.program{
+    padding: 0px 20px;
 }
 
 footer{
