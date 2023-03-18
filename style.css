@@ -1,35 +1,39 @@
-*{
+* {
     border: solid red 1px;
 }
 
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap');
-html, body{
+
+html,
+body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
     margin: 0px;
     padding: 0px;
-  display: grid;
-  grid-template-rows: 4;
-  box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 4;
+    box-sizing: border-box;
 }
 
-header{
+header {
     background-color: #ffcc00;
     display: flex;
     justify-content: space-between;
     height: 100vh;
 }
 
-.play{
+.play {
     margin-right: 5vw;
 }
 
-.logo{
-    width: 14vw; height: 14vw; margin: 1.7vh;
+.logo {
+    width: 14vw;
+    height: 14vw;
+    margin: 1.7vh;
 }
 
-.player{
+.player {
     width: 15.85vw;
 
     display: flex;
@@ -37,29 +41,27 @@ header{
     justify-content: space-between;
 }
 
-.schedule{
-    /* display: flex;
-    justify-content: flex-end; */
+.schedule {
     background-color: #fafafa;
-    /* height: 150vh; */
 }
 
-.scheduletop{
+.scheduletop {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     height: 80vh;
     font-size: 200px;
-flex-basis: 1;
-overflow: none;
+    flex-basis: 1;
+    overflow: none;
 }
 
-.scheduleleft, .scheduleright{
-width: 50%;
+.scheduleleft,
+.scheduleright {
+    width: 50%;
 }
 
-.point{
+.point {
     background-color: black;
     width: 200px;
     height: 200px;
@@ -68,78 +70,85 @@ width: 50%;
     margin: 50px;
 }
 
-.grid-container{
+.grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    grid-template-areas: 
-    ". . mon"
-    "tue wed ."
-    ". thu ."
-    ". . fri"
-    "sat sun .";
+    grid-template-areas:
+        ". . mon"
+        "tue wed ."
+        ". thu ."
+        ". . fri"
+        "sat sun .";
     padding-bottom: 30vh;
 }
 
-.mon, .tue, .wed, .thu, .fri, .sat, .sun{
+.mon,
+.tue,
+.wed,
+.thu,
+.fri,
+.sat,
+.sun {
     height: 800px;
 }
 
-.mon{
+.mon {
     grid-area: mon;
 }
 
-.tue{
+.tue {
     grid-area: tue;
 }
 
-.wed{
+.wed {
     grid-area: wed;
 }
 
-.thu{
+.thu {
     grid-area: thu;
 }
 
-.fri{
+.fri {
     grid-area: fri;
 }
 
-.sat{
+.sat {
     grid-area: sat;
 }
 
-.sun{
+.sun {
     grid-area: sun;
 }
 
-ul{
+ul {
     font-size: 50px;
     list-style-type: none;
 }
 
-li{
+li {
     font-size: 30px;
     display: inline-block;
 }
 
-.hour, .program{
+.hour,
+.program {
     display: inline;
 }
 
-.program{
+.program {
     padding: 0px 20px;
 }
 
-.txt-player{
+.txt-player {
     margin: 1vh;
 }
 
-span{
+span {
     font-size: xx-large;
 }
 
-.sliding-rows{
+.sliding-rows {
     height: 200vh;
     width: 100vw;
     background-color: #ffcc00;
@@ -149,7 +158,7 @@ span{
     overflow: hidden;
 }
 
-.sliding-text-container{
+.sliding-text-container {
     padding-top: 5vh;
     height: 100vh;
     width: 100vw;
@@ -158,18 +167,18 @@ span{
     justify-content: flex-start;
 }
 
-.sliding-text{
+.sliding-text {
     width: 100vw;
     overflow: hidden;
     white-space: nowrap;
     animation: slide-text;
     animation-iteration-count: infinite;
     animation-delay: 0s;
-    animation-duration: 10s; 
+    animation-duration: 10s;
     animation-timing-function: linear;
 }
 
-.sliding-text1{
+.sliding-text1 {
     width: 100vw;
     overflow: hidden;
     white-space: nowrap;
@@ -180,7 +189,27 @@ span{
     animation-timing-function: linear;
 }
 
-.piano-container{
+@keyframes slide-text {
+    from {
+        margin-left: 500px;
+    }
+
+    to {
+        margin-left: -0px;
+    }
+}
+
+@keyframes slide-text1 {
+    from {
+        margin-left: 0px;
+    }
+
+    to {
+        margin-left: 500px;
+    }
+}
+
+.piano-container {
     height: 50%;
     width: 100vw;
     display: flex;
@@ -188,13 +217,13 @@ span{
     justify-content: center;
 }
 
-footer{
+footer {
     display: flex;
     flex-direction: row;
     height: 100vh;
 }
 
-.mouth{
+.mouth {
     background-color: #660099;
     width: 50%;
     height: 100%;
@@ -203,7 +232,7 @@ footer{
     align-items: center;
 }
 
-.arrow{
+.arrow {
     background-color: #ff3333;
     width: 50%;
     height: 100%;
@@ -212,43 +241,18 @@ footer{
     align-items: center;
 }
 
-.freccia:hover{
+.freccia:hover {
     animation: arrow-turn;
-animation-duration: 0.5s;
-animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
 }
 
 @keyframes arrow-turn {
     0% {
-rotate: 0deg;
+        rotate: 0deg;
     }
-    100%{
-rotate: -45deg;
+
+    100% {
+        rotate: -45deg;
     }
 }
-
-@keyframes slide-text {
-    from {
-       margin-left: 0px;
-    }
-
-    to {
-       margin-left: -500px;
-    }
- }
-
- @keyframes slide-text1 {
-    from {
-       margin-left: 0px;
-    }
-
-    to {
-       margin-left: 500px;
-    }
- }
- 
-
-
-
-
-

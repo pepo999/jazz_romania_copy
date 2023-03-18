@@ -5,12 +5,12 @@
         flex-direction: column;
         justify-content: flex-start;
         width: 100vw;
-        height: max-content;
+        height: 100vh;
     }
 
     .play{
-        width: 70vw;
-        height: 70vw;
+        width: 68vw;
+        height: 68vw;
     }
 
     .logo{
@@ -22,9 +22,15 @@
         width: 100vw;
     }
 
+    .point {
+        width: 0px;
+        height: 0px;
+    }
+
     .scheduleleft{
-        width: 100vw;
-        font-size: 50px;
+        width: 100vh;
+        font-size: 25vw;
+        font-weight: 700;
     }
 
     .grid-container{
