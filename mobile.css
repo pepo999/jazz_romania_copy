@@ -1,4 +1,8 @@
 @media screen and (max-width: 900px) {
+
+    body{
+        width: 100vw;
+    }
     header{
         background-color: #ffcc00;
         display: flex;
@@ -9,13 +13,21 @@
     }
 
     .play{
-        width: 68vw;
-        height: 68vw;
+        width: 61vw;
+        height: 65vw;
+    }
+
+    .txt-player{
+        display: flex;
+    flex-direction: column;
+    gap: 10px;
+  justify-content: baseline;
     }
 
     .logo{
         width: 26vw;
         height: 26vw;
+        margin: 1.7vw;
     }
 
     .schedule{
@@ -49,7 +61,47 @@
 
     }
 
+    .mon,
+.tue,
+.wed,
+.thu,
+.fri,
+.sat,
+.sun {
+    height: 110vh;
+    width: 100vw;
+}
 
+    footer {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
     
+    .mouth {
+        background-color: #660099;
+        width: 100vw;
+        height: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .arrow {
+        background-color: #ff3333;
+        width: 100vw;
+        height: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .mouth-img{
+        height: 55vh;
+    }
+    
+    .freccia{
+    height: 55vh;
+    }
      
 }

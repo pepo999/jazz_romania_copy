@@ -35,7 +35,6 @@ header {
 
 .player {
     width: 15.85vw;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -43,6 +42,7 @@ header {
 
 .schedule {
     background-color: #fafafa;
+    overflow: hidden;
 }
 
 .scheduletop {
@@ -81,6 +81,7 @@ header {
         ". . fri"
         "sat sun .";
     padding-bottom: 30vh;
+
 }
 
 .mon,
@@ -138,6 +139,7 @@ li {
 
 .program {
     padding: 0px 20px;
+ 
 }
 
 .txt-player {
@@ -239,6 +241,14 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.mouth-img{
+    height: 55vh;
+}
+
+.freccia{
+height: 55vh;
 }
 
 .freccia:hover {
