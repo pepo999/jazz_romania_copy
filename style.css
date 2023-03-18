@@ -119,10 +119,10 @@ li{
     padding: 0px 20px;
 }
 
-/* .sliding-rows{
-    height: 50%;
-    background-color: pink;
-} */
+.sliding-rows{
+    height: 100vh;
+    background-color: #ffcc00;
+}
 
 .txt-player{
     margin: 1vh;
@@ -133,7 +133,6 @@ span{
 }
 
 footer{
-    background-color: orange;
     display: flex;
     flex-direction: row;
     height: 100vh;
@@ -155,6 +154,21 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.freccia:hover{
+    animation: arrow-turn;
+animation-duration: 0.5s;
+animation-fill-mode: forwards;
+}
+
+@keyframes arrow-turn {
+    0% {
+rotate: 0deg;
+    }
+    100%{
+rotate: -45deg;
+    }
 }
 
 
