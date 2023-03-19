@@ -171,6 +171,12 @@ span {
     font-size: xx-large;
 }
 
+.hr-black>hr{
+    height: 1px;
+    background-color: black;
+    border: solid black 1px;
+}
+
 .sliding-rows {
     height: 200vh;
     width: 100vw;
