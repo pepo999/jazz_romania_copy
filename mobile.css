@@ -1,15 +1,16 @@
 @media screen and (max-width: 900px) {
 
-/* *{
+    /* *{
     border: solid red 2px;
 } */
 
-    body{
+    body {
         width: 100vw;
         margin: 0;
         padding: 0;
     }
-    header{
+
+    header {
         background-color: #ffcc00;
         display: flex;
         flex-direction: column;
@@ -18,25 +19,25 @@
         height: 100vh;
     }
 
-    .play{
+    .play {
         width: 61vw;
         height: 65vw;
     }
 
-    .txt-player{
+    .txt-player {
         display: flex;
-    flex-direction: column;
-    gap: 10px;
-  justify-content: baseline;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: baseline;
     }
 
-    .logo{
+    .logo {
         width: 26vw;
         height: 26vw;
         margin: 1.7vw;
     }
 
-    .schedule{
+    .schedule {
         width: 100vw;
     }
 
@@ -45,119 +46,119 @@
         height: 0px;
     }
 
-    .scheduleleft{
+    .scheduleleft {
         width: 100vh;
         font-size: 25vw;
         font-weight: 700;
     }
 
-    .grid-container{
+    .grid-container {
         display: grid;
         grid-template-columns: 1;
         grid-template-rows: repeat(7, 1fr);
-        grid-template-areas: 
-        "mon"
-        "tue"
-        "wed"
-        "thu"
-        "fri"
-        "sat"
-        "sun";
+        grid-template-areas:
+            "mon"
+            "tue"
+            "wed"
+            "thu"
+            "fri"
+            "sat"
+            "sun";
         padding-bottom: 30vh;
 
     }
 
     .mon,
-.tue,
-.wed,
-.thu,
-.fri,
-.sat,
-.sun {
-    height: 130vh;
-    width: 100vw;
-}
-
-.sliding-rows {
-    height: 100vh;
-    width: 100vw;
-    background-color: #ffcc00;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    font-size: 50px;
-    overflow: hidden;
-}
-
-.sliding-text-container {
-    padding-top: 5vh;
-    height: fit-content;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
-.sliding-text {
-    width: 100vw;
-    overflow: hidden;
-    white-space: nowrap;
-    animation: slide-text;
-    animation-iteration-count: infinite;
-    animation-delay: 0s;
-    animation-duration: 3s;
-    animation-timing-function: linear;
-}
-
-.sliding-text1 {
-    width: 100vw;
-    overflow: hidden;
-    white-space: nowrap;
-    animation: slide-text1;
-    animation-iteration-count: infinite;
-    animation-delay: 0s;
-    animation-duration: 4s;
-    animation-timing-function: linear;
-}
-
-@keyframes slide-text {
-    from {
-        margin-left:500px;
+    .tue,
+    .wed,
+    .thu,
+    .fri,
+    .sat,
+    .sun {
+        height: 130vh;
+        width: 100vw;
     }
 
-    to {
-        margin-left: -500px;
+    .sliding-rows {
+        height: 100vh;
+        width: 100vw;
+        background-color: #ffcc00;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        font-size: 50px;
+        overflow: hidden;
     }
-}
 
-@keyframes slide-text1 {
-    from {
-        margin-left: -900px;
+    .sliding-text-container {
+        padding-top: 5vh;
+        height: fit-content;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
     }
 
-    to {
-        margin-left: 500px;
+    .sliding-text {
+        width: 100vw;
+        overflow: hidden;
+        white-space: nowrap;
+        animation: slide-text;
+        animation-iteration-count: infinite;
+        animation-delay: 0s;
+        animation-duration: 3s;
+        animation-timing-function: linear;
     }
-}
 
-.piano-container {
-    height: 50vh;
-    width: 100vw;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-}
+    .sliding-text1 {
+        width: 100vw;
+        overflow: hidden;
+        white-space: nowrap;
+        animation: slide-text1;
+        animation-iteration-count: infinite;
+        animation-delay: 0s;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+    }
 
-.piano{
-    width: 80vw;
-}
+    @keyframes slide-text {
+        from {
+            margin-left: 500px;
+        }
+
+        to {
+            margin-left: -500px;
+        }
+    }
+
+    @keyframes slide-text1 {
+        from {
+            margin-left: -900px;
+        }
+
+        to {
+            margin-left: 500px;
+        }
+    }
+
+    .piano-container {
+        height: 50vh;
+        width: 100vw;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .piano {
+        width: 80vw;
+    }
 
     footer {
         display: flex;
         flex-direction: column;
         height: fit-content;
     }
-    
+
     .mouth {
         background-color: #660099;
         width: 100vw;
@@ -166,8 +167,8 @@
         justify-content: center;
         align-items: center;
     }
-    
-    .arrow{
+
+    .arrow {
         background-color: #ff3333;
         width: 100vw;
         height: 100vw;
@@ -176,21 +177,19 @@
         align-items: center;
         overflow: hidden;
     }
-    
-    .mouth-img{
+
+    .mouth-img {
         width: 50vw;
         height: 50vh;
     }
-    
-    .freccia{
+
+    .freccia {
         width: 50vw;
-    height: 50vh;
-    rotate: -45deg;
-    content: url(./assets/arrowup.svg);
+        height: 50vh;
+        rotate: -45deg;
+        content: url(./assets/arrowup.svg);
     }
 
-    @keyframes arrow-turn {
-        
-    }
-     
+    @keyframes arrow-turn {}
+
 }

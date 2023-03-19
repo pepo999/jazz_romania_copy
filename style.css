@@ -1,5 +1,3 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 html,
@@ -141,7 +139,7 @@ li {
 
 .program {
     padding: 0px 20px;
- 
+
 }
 
 .txt-player {
@@ -247,12 +245,12 @@ footer {
     align-items: center;
 }
 
-.mouth-img{
+.mouth-img {
     height: 55vh;
 }
 
-.freccia{
-height: 55vh;
+.freccia {
+    height: 55vh;
 }
 
 .freccia:hover {
