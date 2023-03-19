@@ -39,7 +39,7 @@ header {
     padding-bottom: 2vw;
 }
 
-.woman{
+.woman {
     background-color: #660099;
     height: fit-content;
     display: flex;
@@ -47,7 +47,7 @@ header {
     justify-content: flex-end;
 }
 
-.woman-img{
+.woman-img {
     width: 100vw;
 
 }
@@ -69,8 +69,9 @@ header {
     flex-basis: 1;
     overflow: none;
 }
+
 .schedulebottom {
-height: fit-content;
+    height: fit-content;
 }
 
 .scheduleleft,
@@ -171,7 +172,7 @@ span {
     font-size: xx-large;
 }
 
-.hr-black>hr{
+.hr-black>hr {
     height: 1px;
     background-color: black;
     border: solid black 1px;
