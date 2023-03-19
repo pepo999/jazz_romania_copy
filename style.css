@@ -39,10 +39,24 @@ header {
     padding-bottom: 2vw;
 }
 
+.woman{
+    background-color: #660099;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.woman-img{
+    width: 100vw;
+
+}
+
 .schedule {
     background-color: #fafafa;
     overflow: hidden;
     font-weight: 900;
+    height: fit-content;
 }
 
 .scheduletop {
@@ -50,10 +64,13 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 80vh;
+    height: fit-content;
     font-size: 200px;
     flex-basis: 1;
     overflow: none;
+}
+.schedulebottom {
+height: fit-content;
 }
 
 .scheduleleft,
@@ -72,6 +89,7 @@ header {
 }
 
 .grid-container {
+    height: fit-content;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, 1fr);
@@ -81,7 +99,7 @@ header {
         ". thu ."
         ". . fri"
         "sat sun .";
-    padding-bottom: 30vh;
+    /* padding-bottom: 30vh; */
 
 }
 
@@ -93,7 +111,7 @@ header {
 .sat,
 .sun {
 
-    height: 800px;
+    height: fit-content;
 }
 
 .mon {
