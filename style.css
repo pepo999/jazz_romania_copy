@@ -27,6 +27,7 @@ header {
     width: 14vw;
     height: 14vw;
     margin: 1.7vh;
+    padding-top: 2vw;
 }
 
 .player {
@@ -35,6 +36,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-bottom: 2vw;
 }
 
 .schedule {
