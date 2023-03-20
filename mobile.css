@@ -19,10 +19,19 @@
         height: 100vh;
     }
 
+    .player{
+        height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
     .play {
-        width: 80vw;
-        /* height: 65vw; */
-        padding-left: 4.5vw;
+        position: absolute;
+        top: 25vh;
+        width: 65vw;
+        height: 65vw;
+        /* padding-left: 2vw; */
     }
 
     .txt-player {
