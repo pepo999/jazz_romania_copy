@@ -28,9 +28,10 @@
 
     .play {
         position: absolute;
-        top: 25vh;
-        width: 65vw;
-        height: 65vw;
+        top: 7%;
+        left: 2vw;
+        width: 75%;
+        height: 75%;
         /* padding-left: 2vw; */
     }
 
